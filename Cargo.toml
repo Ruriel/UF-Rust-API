@@ -1,5 +1,5 @@
 [package]
-name = "UF-Rust-API"
+name = "uf_rust_api"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 actix-web = "4"
-sea-orm = { version = "^0", features = [ "sqlx-sqlite", "actix", "macros" ] }
+sea-orm = { version = "^0", features = [ "sqlx-sqlite", "runtime-actix-rustls", "macros" ] }

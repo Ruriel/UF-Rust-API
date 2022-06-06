@@ -25,4 +25,3 @@ INSERT INTO uf (id, name, acronym) VALUES (11,'Rondônia','RO'),
 (51,'Mato Grosso','MT'),
 (52,'Goiás','GO'),
 (53,'Distrito Federal','DF');
-
