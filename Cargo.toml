@@ -6,5 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+dotenv = "^0"
 actix-web = "4"
 sea-orm = { version = "^0", features = [ "sqlx-sqlite", "runtime-actix-rustls", "macros" ] }
+futures = "0.3"
+tokio = { version = "1.15.0", features = ["macros", "rt-multi-thread"] }

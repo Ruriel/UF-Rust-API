@@ -5,9 +5,10 @@ use sea_orm::entity::prelude::*;
 #[derive(Clone, Debug, PartialEq, DeriveEntityModel)]
 #[sea_orm(table_name = "uf")]
 pub struct Model {
-    pub id: Option<i32>,
-    pub name: Option<Vec<u8>>,
-    pub acronym: Option<Vec<u8>>,
+    #[sea_orm(primary_key, auto_increment = false)]
+    pub id: i32,
+    pub name: Option<String>,
+    pub acronym: Option<String>,
 }
 
 #[derive(Copy, Clone, Debug, EnumIter)]
